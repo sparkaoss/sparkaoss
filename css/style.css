@@ -87,7 +87,6 @@ header{
 /*PORTADA - COVER*/
 
 main{
-    height: calc(100vh + 800px);
     background: #f7f7f781;
 }
 
