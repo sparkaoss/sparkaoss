@@ -1,71 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 5</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Parcial2</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 
-<body>
-
-    <header>
-        <div class="cheader">
-            <div class="logo">
-                <img src="img/logo.png">
+<body onload="startTime()">
+    <div id="container">
+        <div id="header">
+            <h1 id="h1">VETERINARIA SAN ROQUE</h1>
+            <div id="msj">
+                <h2></h2>
             </div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Joyeria</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <div id="searchbar"><input type="text" placeholder="Search.."></div>
         </div>
-    </header>
 
-    <main>
-        <div class="ccover">
-            <div class="cover">
-                <div class="text__information">
-                    <h1>Mía Sensual Night</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro asperiores, consequuntur earum
-                        voluptatibus error facilis provident culpa nihil sapiente autem tempora pariatur minus quia,
-                        saepe accusamus, explicabo unde esse eius?
-                        lorem
-                    </p>
+        <div id="navmenu">Menu</div>
 
-                    <div class="botones">
-                        <input type="button" class="register" value="Comprar">
+        <div id="cuerpo">
+            <nav id="nav">
+                <div class="sidenav">
+                    <h2 class="h2"><b>Clinica</b></h2>
+                    <a href="#">Servicios</a>
+                    <a href="#">Galeria</a>
+                    <br>
+                    <h2 class="h2">Mascotas</h2>
+                    <a href="#">Articulos</a>
+                    <a href="#">Cuidados</a>
+                    <a href="#">Videos</a>
+                    <a href="#">....</a>
+                </div>
+            </nav>
+            <div id="aside2">
+                <!-- Button to open the modal login form -->
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                <!-- The Modal -->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+
+                    <!-- Modal Content -->
+                    <form class="modal-content animate" action="#">
+
+                        <div class="container">
+                            <label for="uname"><b>Usuario</b></label>
+                            <input type="text" placeholder="Ingresa tu usuario" name="uname" required>
+
+                            <label for="psw"><b>Contraseña</b></label>
+                            <input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+
+                            <button type="document">Iniciar Sesión</button>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <div id="aside3">
+                    <div id="frase">
+                        <h2>Frase del día</h2>
+                        <p>“Respetar a los animales es una obligación, amarlos es un privilegio.” “Los veterinarios son
+                            los
+                            héroes de nuestras mascotas.” “Ser veterinario no es solo cuidar a los animales, es ante
+                            todo
+                            respetar la vida de todos los que habitamos en este mundo y dignificar su existencia.”</p>
+                    </div>
+                    <br>
+                    <div id="links">
+                        <p><a href="www.google.com">Archivos</a></p>
+                    </div>
+
+                </div>
+                <div id="clockdate">
+                    <div class="clockdate-wrapper">
+                        <div id="clock"></div>
+                        <div id="date"></div>
                     </div>
                 </div>
-                <div>
-                    <img style="margin-top:2px; margin-left:20px" height="520" src="img/img1.jpg" alt="">
+            </div>
+            <div id="section">
+                <img id="img" src="img/perrofeliz2.jpg" style="width:350px;height:440px">
+                <div id="article">
+                    <article>
+                        <p>
+                            Tu mascota es única para ti, y también lo es para nosotros. Personalizamos nuestros planes
+                            de
+                            salud según sus necesidades. Los cuidados preventivos y la detección precoz es la mejor
+                            manera
+                            de evitar y detectar las enfermedades.
+                        </p>
+                        <br>
+                        <p>
+                            La relación con tu mascota es única y especial. Nosotros te ayudamos a mantenerla y
+                            fortalecerla. Al entender las expresiones de tu mascota y aprender que le motiva, podras
+                            conectar con ella a un nuevo nivel y construir una relación de confianza.
+                        </p>
+                        <br>
+                        <p>
+                            Para que tu mascota y tú disfrutéis al máximo de vuestra relación, necesita estar saludable
+                            y en plena forma. Nosotros estamos comprometidos en el mantenimiento y recuperación del
+                            estado de salud y calidad de vida que se merece.
+                        </p>
+                    </article>
                 </div>
             </div>
+            <div id="banner1">
+                <img src="img/banner.jpg" style="width:780px;height:175px">
+            </div>
+
         </div>
-        <div class="ccover">
-            <div class="cover">
-                <div class="text__information">
-                    <h3>Estuche Collar + Aretes Baubale</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro asperiores, consequuntur earum
-                        voluptatibus error facilis provident culpa nihil sapiente autem tempora pariatur minus quia,
-                        saepe accusamus, explicabo unde esse eius?
-                    </p>
-                </div>
-                <div>
-                    <img style="margin-top:2px; margin-left:220px" height="320" src="img/img2.jpg" alt="">
-                </div>
+        <div id="footer">
+            <div id="frase">
+                <h3>Información de contacto</h3>
+                <h4>Dirección</h4>
+                <p>Velasco Galvarro, Arce y San felipe #2</p>
+                <br>
+                <h4>Teléfono</h4>
+                <p>52-654321832</p>
+                <br>
+                <h4>Celular urgencias</h4>
+                <p>724-654654321</p>
+
+            </div>
+
+        </div>
+        <div id="banner">
+            <div id="frase">
+                <h3>2022 Copyright © Clinica Salvatierra S.L. </h3>
+                <p>Desarrollado por Edson Oswaldo Mamani Gutiérrez | Aviso Legal | Política de Cookies</p>
             </div>
         </div>
-        
-    </main>
+    </div>
 </body>
 
 </html>
